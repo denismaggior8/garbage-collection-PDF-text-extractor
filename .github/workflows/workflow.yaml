@@ -4,10 +4,12 @@ name: update
 on:
   push:
     branches:
-      - master
+      #- master
       - development
-    #paths:
-    #  - 'coordinates/**'
+    paths:
+      - 'coordinates/**'
+      - 'PDFs/**'
+      - 'pom.xml'
   workflow_dispatch:
 
 jobs:
